@@ -9,6 +9,7 @@
   font-size: 12pt;
   line-height: 1.5;
   color: #000;
+  margin: 0 auto;
 }
 .ql-editor:focus {
   border-color: #007bff;

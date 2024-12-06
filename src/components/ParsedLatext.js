@@ -7,7 +7,7 @@ export const parseLatexToReadableText = (latex) => {
   const location = locationMatch ? locationMatch[1] : "";
   
   return latex
-    .replace(/%.*$/gm, "")
+    // .replace(/%.*$/gm, "")
     .replace(/\\usepackage\[[^\]]*\]\{[^\}]*\}/g, "")
     .replace(/\\documentclass\[[^\]]*\]\{[^\}]*\}/g, "\\documentclass{article}")
     .replace(/\\newcommand\{\\AND\}[\s\S]*?\\sbox\\ANDbox\{\$\|\$\}/g, "")
